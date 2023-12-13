@@ -62,6 +62,16 @@
     border-radius: 80px;
     border: 1px solid #AAA8A8;
 }
+.inputfield {
+    display: flex;
+    width: 291px;
+    height: 72px;
+    padding: 20px 32px;
+    align-items: center;
+    gap: 14px;
+    border-radius: 80px;
+    border: 1px solid #4169E1;
+}
 .searchtext {
     color: #AAA;
     text-align: center;
