@@ -156,7 +156,17 @@ input.star-5:checked ~ label.star:before {
     color: #FE7;
     text-shadow: 0 0 20px #952;
 }
+input.star-10:checked ~ label.star:before {
+    color: #FE7;
+    text-shadow: 0 0 20px #952;
+}
+input.star-15:checked ~ label.star:before {
+    color: #FE7;
+    text-shadow: 0 0 20px #952;
+}
 input.star-1:checked ~ label.star:before { color: #F62; }
+input.star-6:checked ~ label.star:before { color: #F62; }
+input.star-11:checked ~ label.star:before { color: #F62; }
 label.star:hover { transform: rotate(-15deg) scale(1.3); }
 label.star:before {
     content: '\f006';
@@ -173,4 +183,95 @@ label.star:before {
     line-height: normal;
     padding-bottom: 70px;
     padding-left: 28px;
+}
+.footer1 {
+    background-image: linear-gradient(236deg, #009EFF -2.78%, #58BFFF 26.99%, #A8E6FF 106.85%);
+}
+.fontfoot1 {
+    color: #FFF;
+    font-size: 23.982px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: normal;
+}
+.fontfoot2 {
+    color: #FFF;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 650;
+    line-height: normal;
+}
+.fontfoot3 {
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: normal;
+}
+.fontfoot4 {
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 490;
+    line-height: normal;
+    padding-bottom: 3%;
+}
+a{
+    text-decoration: none;
+}
+.fl-wrap {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+.bbb-wrapper .subcribe-form p {
+    color: #FFF;
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 650;
+    line-height: normal;
+}
+.bbb-wrapper .subcribe-form form {
+    max-width: 450px;
+    margin: 15px auto;
+    position: relative;
+}
+.bbb-wrapper .subcribe-form #subscribe input {
+    width: 450px;
+    height: 59px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: 0 30px;
+}
+.bbb-wrapper .subcribe-form #subscribe #subscribe-button {
+    height: 39px;
+    padding: 0 30px;
+    border-radius: 8px;
+    border: none;
+    position: absolute;
+    right: 7px;
+    top: 15px;
+    font-size: 18px;
+    font-weight: 550;
+    color: #fff;
+    cursor: pointer;
+    background-image: linear-gradient(236deg, #009EFF -2.78%, #58BFFF 26.99%, #A8E6FF 106.85%);
+}
+.subscribe-message {
+    color: #fff;
+    float: left;
+    margin-top: 10px;
+    text-align: left;
+    font-weight: 500;
+    line-height: 19px;
+}
+.color-bg{ 
+	background: #4DB7FE;
+}
+#subscribe-button:hover{
+    background: #2C3B5A;
+    color: #fff;
 }
