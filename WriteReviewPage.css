@@ -2,3 +2,49 @@
     padding-left: 132px;
     padding-top: 92px;
 }
+.font1 {
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.font2 {
+    color: #000;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.font3 {
+    color: #404040;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.one {
+    color: #AAA;
+}
+.one::placeholder {
+    color: #AAA;
+}
+.searchfield {
+    display: flex;
+    width: 912px;
+    height: 78px;
+    padding: 21px 46px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 80px;
+    border: 1px solid #AAA8A8;
+}
+.form-control:focus {
+    box-shadow: none;
+}
+.form-control::placeholder {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: normal;
+}
