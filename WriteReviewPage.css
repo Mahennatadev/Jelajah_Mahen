@@ -48,3 +48,63 @@
     font-weight: 350;
     line-height: normal;
 }
+.borderfileupload {
+    display: flex;
+    width: 596px;
+    height: 491px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+}
+@media (min-width: 992px) {
+    .col-md-offset-1 {
+       margin-left: 12%; /* <- your value here */
+    }
+}
+@media (min-width: 992px) {
+    .col-md-offset-2 {
+       margin-left: 20%; /* <- your value here */
+    }
+}
+
+.font1input {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 490px;
+    line-height: normal;
+}
+.borderinputtitle {
+    display: flex;
+    width: 1000px;
+    padding: 24px 20px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 4px;
+    border: 1px solid #B4B4B4;
+}
+.borderinputtitle1 {
+    display: flex;
+    width: 352px;
+    padding: 24px 20px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 4px;
+    border: 1px solid #B4B4B4;
+}
+.one {
+    color: #AAA;
+}
+.one::placeholder {
+    color: #AAA;
+}
+.three {
+    color: #5B5B5B;
+}
+.three::placeholder {
+    color: #5B5B5B;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: normal;
+}

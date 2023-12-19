@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="WriteReviewPage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" />
+    <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
 </head>
 <body>
     <!-- Navbar -->
@@ -54,11 +56,47 @@
                 </div>
             </div>
             <div class="row pt-5">
-                <div class="col-5">
-                    <!-- content -->
+                <div class="col-3 ms-5 mb-5">
+                    <form action="/file/post" class="dropzone dz-clickable borderfileupload border-0 p-3" style="background-color: #E3E3E3;">
+                        <div class="dz-default dz-message text-center">
+                            <i><svg xmlns="http://www.w3.org/2000/svg" width="107" height="107" viewBox="0 0 107 107" fill="none">
+                                <path d="M53.5001 78.0208C59.073 78.0208 63.8107 76.0696 67.7133 72.167C71.6158 68.2645 73.5656 63.5283 73.5626 57.9583C73.5626 52.3854 71.6113 47.6477 67.7088 43.7452C63.8063 39.8426 59.07 37.8929 53.5001 37.8958C47.9272 37.8958 43.1895 39.8471 39.2869 43.7496C35.3844 47.6522 33.4346 52.3884 33.4376 57.9583C33.4376 63.5312 35.3889 68.269 39.2914 72.1715C43.1939 76.074 47.9301 78.0238 53.5001 78.0208ZM53.5001 73.5625L48.5959 62.8625L37.8959 57.9583L48.5959 53.0542L53.5001 42.3542L58.4043 53.0542L69.1043 57.9583L58.4043 62.8625L53.5001 73.5625ZM17.8334 93.625C15.3813 93.625 13.2815 92.7512 11.5338 91.0035C9.78613 89.2558 8.91378 87.1574 8.91676 84.7083V31.2083C8.91676 28.7563 9.79059 26.6564 11.5383 24.9087C13.2859 23.161 15.3843 22.2887 17.8334 22.2917H31.8772L40.1251 13.375H66.8751L75.123 22.2917H89.1668C91.6188 22.2917 93.7187 23.1655 95.4664 24.9132C97.2141 26.6608 98.0864 28.7592 98.0834 31.2083V84.7083C98.0834 87.1604 97.2096 89.2603 95.4619 91.008C93.7143 92.7556 91.6159 93.628 89.1668 93.625H17.8334Z" fill="#040404"/></svg></i>
+                        </div>
+                    </form>
+                    <script>
+                        Dropzone.autoDiscover = false;
+                        // Dropzone configuration
+                        var myDropzone = new Dropzone(".dropzone", {
+                            url: "/file/post", 
+                            paramName: "file",
+                            maxFilesize: 2, // MB
+                            maxFiles: 10,
+                            acceptedFiles: 'image/*',
+                            dictDefaultMessage: "Drag files here or click to upload.",
+                            clickable: true 
+                        });
+                    </script>
                 </div>
-                <div class="row pt-7">
-                    <!-- content -->
+                <div class="col-6 col-md-offset-1">
+                    <div>
+                        <label for="exampleFormControlInputTitle" class="form-label font1input">Judul ulasan Anda</label>
+                        <input type="Reviewtitle" class="form-control borderinputtitle mt-2 three form-control-lg" id="exampleFormControlInputTitle" placeholder="Ringkas Perjalanan Perjalanan Anda">
+                    </div>
+                    <div>
+                        <label for="exampleFormControlInputReview" class="form-label font1input mt-5">Ulasan Anda</label>
+                        <input type="Reviewtitle" class="form-control borderinputtitle rounded mt-2 three form-control-lg" id="exampleFormControlInputReview" placeholder="Ulasan terperinci tentang Perjalanan Perjalanan Anda. Wisatawan akan senang mengetahui pengalaman Anda">
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-5">
+                            <div>
+                                <label for="exampleFormControlInputLocation" class="form-label font1input">Lokasi</label>
+                                <input type="Reviewtitle" class="form-control borderinputtitle1 mt-2 three form-control-lg" id="exampleFormControlInputLocation" placeholder="Masukkan Lokasi Perjalanan">
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-offset-2">
+                            
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
