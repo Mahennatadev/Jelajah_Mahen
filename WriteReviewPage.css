@@ -22,6 +22,13 @@
     font-weight: 400;
     line-height: normal;
 }
+.font4 {
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 .one {
     color: #AAA;
 }
@@ -76,7 +83,7 @@
 }
 .borderinputtitle {
     display: flex;
-    width: 1000px;
+    width: 900px;
     padding: 24px 20px;
     align-items: flex-start;
     gap: 10px;
@@ -107,4 +114,19 @@
     font-style: normal;
     font-weight: 450;
     line-height: normal;
+}
+.dropdownborder {
+    display: flex;
+    width: 472px;  
+    padding: 24px 20px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid #B4B4B4;
+}
+.checkbox1 {
+    width: 28px;
+    height: 28px;
+    border-radius: 4px;
+    border: 1.5px solid #000;
 }
