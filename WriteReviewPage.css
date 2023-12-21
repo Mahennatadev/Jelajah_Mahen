@@ -115,7 +115,7 @@
     font-weight: 450;
     line-height: normal;
 }
-.dropdownborder {
+.selectborder {
     display: flex;
     width: 472px;  
     padding: 24px 20px;
