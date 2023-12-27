@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
+
+body {
+    font-family: 'Urbanist', sans-serif;
+}
 .mnav {
     padding-left: 132px;
     padding-top: 92px;

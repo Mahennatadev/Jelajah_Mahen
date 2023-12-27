@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
+
+body {
+    font-family: 'Urbanist', sans-serif;
+}
 .font1 {
     font-size: 80px;
     font-style: normal;
